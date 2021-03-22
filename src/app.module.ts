@@ -23,7 +23,7 @@ import { ProductModule } from './product/product.module';
         database: configService.get(DB_DATABASE),
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         synchronize: true,
-        logging: false
+        logging: true
       }),
       inject: [ConfigService]
     }),
