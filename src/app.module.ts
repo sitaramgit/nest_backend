@@ -15,8 +15,8 @@ import { PugAdapter } from '@nestjs-modules/mailer/dist/adapters/pug.adapter';
         host: 'smtp.gmail.com',
         port: '465',
         auth: {
-          user: 'sitaramkudireddyvtiger@gmail.com',
-          pass: 'sitaram$123',
+          user: 'sitaramdummy@gmail.com',
+          pass: 'sitaramdummypassword',
         },
       },
       defaults: {

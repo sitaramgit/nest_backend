@@ -32,20 +32,6 @@ export class ProductController {
 
     @Get()
     async getAll() {
-
-       const mails = await this
-        .mailerService
-        .sendMail({
-          to: 'sitaramkudireddy@gmail.com', // list of receivers
-          from: 'sitaramkudireddyvtiger@gmail.com', // sender address
-          subject: 'Testing Nest MailerModule ✔', // Subject line
-          text: 'welcome', // plaintext body
-          html: '<b>welcome to the gmail sitaram</b>', // HTML body content
-        })
-        .then((res) => {console.log(res)})
-        .catch((err) => {console.log(err)});
-        console.log(mails);
-        // return mails;
         return await this.productService.getAll();
     }
 
